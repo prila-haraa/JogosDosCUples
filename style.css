@@ -1,0 +1,54 @@
+body {
+  background: linear-gradient(135deg, #ff0057, #ff8c00);
+  font-family: Arial, sans-serif;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background: rgba(0,0,0,0.7);
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  width: 320px;
+}
+
+select, button {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: none;
+}
+
+button {
+  background: #ff0057;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #ff336f;
+}
+
+.resultado {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+@keyframes girarDado {
+  0% { transform: rotate(0deg) scale(1); }
+  25% { transform: rotate(90deg) scale(1.2); }
+  50% { transform: rotate(180deg) scale(1); }
+  75% { transform: rotate(270deg) scale(1.2); }
+  100% { transform: rotate(360deg) scale(1); }
+}
+
+button.girando {
+  animation: girarDado 1s ease-in-out;
+  pointer-events: none;
+}
